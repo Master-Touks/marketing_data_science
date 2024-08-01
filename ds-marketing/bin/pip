@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/tukanebari/Library/Mobile Documents/com~apple~CloudDocs/python_projects/data_science/marketing_analytics/Data-Science-for-Marketing-Analytics-Second-Edition/ds-marketing/bin/python3.12" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
